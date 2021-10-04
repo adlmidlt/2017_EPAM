@@ -1,0 +1,10 @@
+#main-footer {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+}
+
+.name-address-web {
+    flex: 1 0 auto;
+    text-align: center;
+}

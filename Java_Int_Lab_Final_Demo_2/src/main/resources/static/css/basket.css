@@ -1,0 +1,28 @@
+@media (min-height: 300px) {
+    #item-basket-shop {
+        /*         border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: row;
+        overflow: auto;
+        height: 250px;
+        margin: -130px 5px 5px;
+    }
+
+    #item-basket-shop .item {
+        height: 50px;
+    }
+
+    #item-basket-shop .size-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #item-basket-console {
+        border: 1px solid blue;
+    }
+
+    #item-basket-count-items {
+    }
+}

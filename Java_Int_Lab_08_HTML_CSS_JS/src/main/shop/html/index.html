@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/header.css"> 
+    <link rel="stylesheet" href="../css/section.css"> 
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/basket.css">
+    <script src="../resources/jquery-3.3.1.min.js"></script>
+    <title>Shop Smoke</title>
+</head>
+<body>
+    <div id="container">
+        <header id="main-header">
+            <div id="name-user"> Ларионов Анатолий</div>
+            <div id="a-exit"><a href="authorization.html">Exit</a></div>
+            <!--Modal window search-->
+            <div id="btn-search"><input type="button" value="Поиск"></div>
+            <div id="search-modal" class="modal-search">
+                <div class="modal-content-search">
+                    <div class="close-search">&times;</div>
+                    <h1 id="text-search-h1">Поиск</h1>
+                    <div id="text-search">
+                        <input id="search-list" type="search" placeholder="Поиск">
+                        <input id="btn-search-click" type="button" value="Поиск" onclick="search()">
+                    </div>
+                    <div id="wrapper-search">
+                        <div class="item-view-hidden">
+                            <div class="item-img">
+                                <img class="size-img-search" src="../img/category/kalyan/Kalayn Black Stone.JPG" alt="Black Stone">
+                            </div>
+                            <div class="item-name-search">Black Stone</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/kalyan/Kalayn Polus.JPG" alt="Polus">
+                                </div>
+                                <div class="item-name-search">Polus</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/kalyan/Kalayn Sirius.JPG" alt="Sirius">
+                                </div>
+                                <div class="item-name-search">Sirius</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/kalyan/Kalayn UFO.JPG" alt="UFO">
+                                </div>
+                                <div class="item-name-search">UFO</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/kalyan/Kalyan General.JPG" alt="General">
+                                </div>
+                                <div class="item-name-search">General</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/kalyan/Kalyan Dark Angel.JPG" alt="Dark Angel">
+                                </div>
+                                <div class="item-name-search">Dark Angel</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA The perfect storm.jpg" alt="The perfect storm">
+                                </div>
+                                <div class="item-name-search">The perfect storm</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Whie grape.jpg" alt="Whie grape">
+                                </div>
+                                <div class="item-name-search">Whie grape</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Wind of cuba.jpg" alt="Wind of cuba">
+                                </div>
+                                <div class="item-name-search">Wind of cuba</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rhapsody.jpg" alt="Rhapsody">
+                                </div>
+                                <div class="item-name-search">Rhapsody</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rio kiss.jpg" alt="Rio kiss">
+                                </div>
+                                <div class="item-name-search">Rio kiss</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Wind of cuba.jpg" alt="Wind of cuba">
+                                </div>
+                                <div class="item-name-search">Wind of cuba</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rhapsody.jpg" alt="Rhapsody">
+                                </div>
+                                <div class="item-name-search">Rhapsody</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rio kiss.jpg" alt="Rio kiss">
+                                </div>
+                                <div class="item-name-search">Rio kiss</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Wind of cuba.jpg" alt="Wind of cuba">
+                                </div>
+                                <div class="item-name-search">Wind of cuba</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rhapsody.jpg" alt="Rhapsody">
+                                </div>
+                                <div class="item-name-search">Rhapsody</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rio kiss.jpg" alt="Rio kiss">
+                                </div>
+                                <div class="item-name-search">Rio kiss</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Wind of cuba.jpg" alt="Wind of cuba">
+                                </div>
+                                <div class="item-name-search">Wind of cuba</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rhapsody.jpg" alt="Rhapsody">
+                                </div>
+                                <div class="item-name-search">Rhapsody</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rio kiss.jpg" alt="Rio kiss">
+                                </div>
+                                <div class="item-name-search">Rio kiss</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Wind of cuba.jpg" alt="Wind of cuba">
+                                </div>
+                                <div class="item-name-search">Wind of cuba</div>
+                            </div>
+                            <div class="item-view-hidden">
+                                <div class="item-img">
+                                    <img class="size-img-search" src="../img/category/tabak/ADALYA Rhapsody.jpg" alt="Rhapsody">
+                                </div>
+                                <div class="item-name-search">Rhapsody</div>
+                            </div>
+                            <div class="item-view-hidden">
+                            <div class="item-img">
+                                <img class="size-img-search" src="../img/category/tabak/ADALYA Rio kiss.jpg" alt="Rio kiss">
+                            </div>
+                            <div class="item-name-search">Rio kiss</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal Basket-->
+            <div id="btn-basket"><input type="button" value="Корзина">
+                <span id="item-count">0</span>
+            </div>
+            <div id="modal-basket" class="modal-basket">
+                <div class="modal-content-basket">
+                    <div class="close-basket">&times;</div>
+                    <div><h1 id="text-basket-h1">Корзина</h1></div>
+                    <div id="item-basket-shop"></div>
+                <div id="item-basket-count-items">
+                    <span>Сумма товаров: </span>
+                    <span id="sum">0 </span>$<br>
+                    <span id="discount">0</span>
+                    <span id="discSum">0</span>$<br>
+                    <span id="final-sum-descr">Итого:</span>
+                    <span id="final-sum">0</span>$
+                </div>
+                </div>
+            </div>
+        </header>
+        <section class="main-section">
+            <div class="items-wrapper">
+                <div class="name-category">Кальян</div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalayn Black Stone.JPG" alt="Black Stone">
+                        </div>
+                        <div class="item-name">Black Stone</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Black Stone</div>
+                        <div>Цена: <span class="item-price">1580</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalayn Polus.JPG" alt="Polus">
+                        </div>
+                        <div class="item-name">Polus</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Polus</div>
+                        <div>Цена: <span class="item-price">1325</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalayn Sirius.JPG" alt="Sirius">
+                        </div>
+                        <div class="item-name">Sirius</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Sirius</div>
+                        <div>Цена: <span class="item-price">5434</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalayn UFO.JPG" alt="UFO">
+                        </div>
+                        <div class="item-name">UFO</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: UFO</div>
+                        <div>Цена: <span class="item-price">1237</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan Black art.JPG" alt="Black art">
+                        </div>
+                        <div class="item-name">Black Art</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Black Art</div>
+                        <div>Цена: <span class="item-price">1289</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan Cygnus.JPG" alt="Cygnus">
+                        </div>
+                        <div class="item-name">Cygnus</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Cygnus</div>
+                        <div>Цена: <span class="item-price">3757</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan Dark Angel.JPG" alt="Dark Angel">
+                        </div>
+                        <div class="item-name">Dark Angel</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Dark Angel</div>
+                        <div>Цена: <span class="item-price">6755</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan Faraon M-Five.JPG" alt="Faraon M-Five.JPG">
+                        </div>
+                        <div class="item-name">Faraon M-Five.JPG</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Faraon M-Five.JPG</div>
+                        <div>Цена: <span class="item-price">5677</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan General.JPG" alt="General">
+                        </div>
+                        <div class="item-name">General</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: General</div>
+                        <div>Цена: <span class="item-price">2756</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan Golden bar.JPG" alt="Golden bar">
+                        </div>
+                        <div class="item-name">Golden Bar</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Golden Bar</div>
+                        <div>Цена: <span class="item-price">7675</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan Graff.JPG" alt="Graff">
+                        </div>
+                        <div class="item-name">Graff</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Graff</div>
+                        <div>Цена: <span class="item-price">5467</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-view">
+                        <div class="item-img">
+                            <img class="size-img" src="../img/category/kalyan/Kalyan Neptune.JPG" alt="Neptune">
+                        </div>
+                        <div class="item-name">Neptune</div>
+                    </div>
+                    <div class="item-details">
+                        <div class="item-description">Описание: Neptune</div>
+                        <div>Цена: <span class="item-price">1234</span>$</div>
+                        <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-wrapper">
+                <div class="name-category">Табак</div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Maracuja Cream.jpg" alt="Maracuja Cream">
+                            </div>
+                            <div class="item-name">Maracuja Cream</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Maracuja Cream</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Peach-Mint.jpg" alt="Peach-Mint">
+                            </div>
+                            <div class="item-name">Peach-Mint</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Peach-Mint</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Pina Colada.jpg" alt="Pina Colada">
+                            </div>
+                            <div class="item-name">Pina Colada</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Pina Colada</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Pineapple Banana.jpg" alt="Pineapple Banana">
+                            </div>
+                            <div class="item-name">Pineapple Banana</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Pineapple Banana</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Raspberry.jpg" alt="Raspberry">
+                            </div>
+                            <div class="item-name">Raspberry</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Raspberry</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Rio kiss.jpg" alt="Rio kiss">
+                            </div>
+                            <div class="item-name">Rio kiss</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Rio kiss</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Rhapsody.jpg" alt="Rhapsody">
+                            </div>
+                            <div class="item-name">Rhapsody</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Rhapsody</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Wind of cuba.jpg" alt="Wind of cuba">
+                            </div>
+                            <div class="item-name">Wind of cuba</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Wind of cuba</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Whie grape.jpg" alt="Whie grape">
+                            </div>
+                            <div class="item-name">Whie grape</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Whie grape</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA The perfect storm.jpg" alt="The perfect storm">
+                            </div>
+                            <div class="item-name">The perfect storm</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: The perfect storm</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-view">
+                            <div class="item-img">
+                                <img class="size-img" src="../img/category/tabak/ADALYA Vanilla.jpg" alt="Vanilla">
+                            </div>
+                            <div class="item-name">Vanilla</div>
+                        </div>
+                        <div class="item-details">
+                            <div class="item-description">Описание: Vanilla</div>
+                            <div>Цена: <span class="item-price">150</span>$</div>
+                            <div class="put-basket"><input class="add-basket" type="button" value="Положить в корзину"></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer id="main-footer">
+            <div class="name-address-web"><address>smoke-shop.ru</address></div>
+            <div class="name-production">Student Production &copy;</div>
+        </footer>
+        </div>
+    <script src="../js/extension-item.js"></script>
+    <script src="../js/modal-search.js"></script>
+    <script src="../js/modal-basket.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/basket.js"></script>
+</body>
+</html>

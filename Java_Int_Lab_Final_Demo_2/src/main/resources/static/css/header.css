@@ -1,0 +1,36 @@
+@media (min-width: 400px) {
+    * {
+        margin: 0;
+    }
+
+    #main-header {
+        background-color: rgb(233, 241, 107);
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #btn-basket {
+        padding-right: 70px;
+    }
+
+    #btn-search {
+        flex: 0;
+        margin-right: 15px;
+    }
+
+    #a-exit {
+        flex: auto;
+        margin-left: 15px;
+    }
+
+    #add-item {
+        flex: auto;
+        margin-right: 100px;
+    }
+}

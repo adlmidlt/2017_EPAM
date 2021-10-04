@@ -1,0 +1,36 @@
+@media (min-width: 400px) and (min-height: 250px) {
+    * {
+        margin: 0;
+    }
+
+    #auth {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    #form-auth {
+        border: 1px solid rgba(177, 196, 166, 0.774);;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 280px;
+    }
+
+    #text-auth {
+        padding-bottom: 25px;
+    }
+
+    #field-login, #filed-password, #url-reg, #btn-auth {
+        padding-bottom: 18px;
+    }
+}

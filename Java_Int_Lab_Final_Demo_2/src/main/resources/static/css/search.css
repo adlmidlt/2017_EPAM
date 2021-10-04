@@ -1,0 +1,23 @@
+#wrapper-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 10px;
+    overflow: auto;
+    height: 450px;
+}
+
+#text-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-view-hidden {
+    display: none;
+}
+
+.item-name-search {
+    text-align: center;
+}

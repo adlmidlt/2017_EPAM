@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/autorization.css">
+    <script src="../resources/jquery-3.3.1.min.js"></script>
+    <script src="../js/validation.js"></script>
+    <title>Авторизация</title>
+</head>
+<body>
+    <form id="auth" action="#" method="GET">
+        <div id="form-auth">
+            <div id="text-auth"><span>Авторизация</span></div>
+            <div id="field-login">
+                Логин:<br>
+                <input type="text" placeholder="login" id="login" required>
+                <div id="valid-login"></div>
+            </div>
+            <div id="filed-password">
+                Пароль:<br>
+                <input type="password" placeholder="******" name="passw" required>
+                <div class="valid-password"></div>
+            </div>
+            <div id="btn-auth">
+                <input type="submit" value="log in">
+            </div>
+            <div id="url-reg">
+                <a href="registration.html">Sing up</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
